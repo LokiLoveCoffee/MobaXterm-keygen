@@ -4,7 +4,7 @@
 # ------------------------------------------
 #   @author: Double Sine -- Thanks to the original author or authors!
 #   @License: GPLv3
-#   @date 2019-08-10 13:01:44 Generate license key for 'MobaXterm v12.4' to 'me'
+#   @date 2019-08-10 13:01:44 Generate license key for 'MobaXterm v20.1' to 'me'
 # ------------------------------------------
 import os
 import sys
@@ -100,13 +100,13 @@ def generate_license(license_type: int, user: str, major_version: int, minor_ver
 
     :param license_type: License Type: 1-Professional, 3-Educational, 4-Personal
     :param user: licensee name, me etc.
-    :param major_version: MobaXterm major version, 12 etc.
+    :param major_version: MobaXterm major version, 20 etc.
     :param minor_version: MobaXterm minor version, 0, 1, etc.
     :param count: licensee count
     :return: none
     """
     assert (count >= 0)
-    # lic_key: '1#me|124#1#123464#0#0#0#'
+    # lic_key: '1#me|201#1#203161#0#0#0#'
     lic_key = '%d#%s|%d%d#%d#%d3%d6%d#%d#%d#%d#' % (license_type,
                                                     user, major_version, minor_version,
                                                     count,
@@ -125,13 +125,13 @@ def print_help():
     print('    MobaXterm-Keygen.py <UserName> <Version>')
     print()
     print('    <UserName>:      The Name licensed to <me>')
-    print('    <Version>:       The Version of MobaXterm <12.4>')
+    print('    <Version>:       The Version of MobaXterm <20.1>')
     print()
 
 
 if __name__ == '__main__':
     """
-    $ python MobaXterm-Keygen.py me 12.4
+    $ python MobaXterm-Keygen.py me 20.1
     """
     if len(sys.argv) != 3:
         print_help()
