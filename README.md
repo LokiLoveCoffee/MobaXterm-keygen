@@ -10,26 +10,26 @@ It uses python 3 to generate a fake license.
 
 ```
 Usage:
-    python MobaXterm-Keygen.py <UserName> <Version>
+    python3 MobaXterm-Keygen.py <UserName> <Version>
 
     <UserName>:      The Name licensed to <me>
-    <Version>:       The Version of MobaXterm <20.3>
+    <Version>:       The Version of MobaXterm <20.5>
 ```
 
 Example:
 
 ```bash
-PS path\to\MobaXterm-Keygen>python MobaXterm-Keygen.py me 20.3
+PS path\to\MobaXterm-Keygen>python3 MobaXterm-Keygen.py me 20.5
 [*] Success!
 [*] File generated: path\to\MobaXterm-Keygen\Custom.mxtpro
 [*] Please move or copy the newly-generated file to MobaXterm's installation path.
 ```
 
-Then copy `Custom.mxtpro` to `%ProgramFiles%\MobaXterm\v20.3\`.
+Then copy `Custom.mxtpro` to `%ProgramFiles%\MobaXterm\v20.5\`.
 
-## Screenshot
+## About
 
-![](v20.1-about.png)
+![](About.png)
 
 ---
 
