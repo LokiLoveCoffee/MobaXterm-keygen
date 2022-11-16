@@ -105,7 +105,7 @@ def generate_license(license_type: int, user: str, major_version: int, minor_ver
     :return: none
     """
     assert (count >= 0)
-    # lic_key: '1#me|205#1#203565#0#0#0#'
+    # lic_key: '1#me|222#1#223262#0#0#0#'
     lic_key = '%d#%s|%d%d#%d#%d3%d6%d#%d#%d#%d#' % (license_type,
                                                     user, major_version, minor_version,
                                                     count,
@@ -124,13 +124,13 @@ def print_help():
     print('    MobaXterm-Keygen.py <UserName> <Version>')
     print()
     print('    <UserName>:      The Name licensed to <me>')
-    print('    <Version>:       The Version of MobaXterm <20.5>')
+    print('    <Version>:       The Version of MobaXterm <22.2>')
     print()
 
 
 if __name__ == '__main__':
     """
-    $ python3 MobaXterm-Keygen.py me 20.5
+    $ python3 MobaXterm-Keygen.py me 22.2
     """
     if len(sys.argv) != 3:
         print_help()
