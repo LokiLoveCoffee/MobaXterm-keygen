@@ -2,7 +2,7 @@
 
 Generate license key for [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html).
 
-## How it work?
+## How it works?
 
 It uses python 3 to generate a fake license.
 
@@ -13,19 +13,19 @@ Usage:
     python3 MobaXterm-Keygen.py <UserName> <Version>
 
     <UserName>:      The Name licensed to <me>
-    <Version>:       The Version of MobaXterm <20.5>
+    <Version>:       The Version of MobaXterm <23.0>
 ```
 
 Example:
 
 ```bash
-PS path\to\MobaXterm-Keygen>python3 MobaXterm-Keygen.py me 20.5
+PS path\to\MobaXterm-Keygen>python3 MobaXterm-Keygen.py me 23.0
 [*] Success!
 [*] File generated: path\to\MobaXterm-Keygen\Custom.mxtpro
 [*] Please move or copy the newly-generated file to MobaXterm's installation path.
 ```
 
-Then copy `Custom.mxtpro` to `%ProgramFiles%\MobaXterm\v20.5\`.
+Then copy `Custom.mxtpro` to `%ProgramFiles%\MobaXterm\v23.0\`.
 
 ## About
 
