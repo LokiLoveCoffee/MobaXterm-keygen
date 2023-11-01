@@ -105,7 +105,7 @@ def generate_license(license_type: int, user: str, major_version: int, minor_ver
     :return: none
     """
     assert (count >= 0)
-    # lic_key: '1#me|230#1#233060#0#0#0#'
+    # lic_key: '1#me|234#1#233464#0#0#0#'
     lic_key = '%d#%s|%d%d#%d#%d3%d6%d#%d#%d#%d#' % (license_type,
                                                     user, major_version, minor_version,
                                                     count,
@@ -115,8 +115,11 @@ def generate_license(license_type: int, user: str, major_version: int, minor_ver
                                                     0)  # No Plugins flag. 0 means "NoPlugins = false". But it does not work.
     print('[*] License key: %s' % lic_key)
     encoded_lic_key = variant_base64_encode(encrypt_bytes(0x787, lic_key.encode())).decode()
-    with zipfile.ZipFile('Custom.mxtpro', 'w') as f:
-        f.writestr('Pro.key', data=encoded_lic_key)
+    curr_dir = os.path.dirname(os.path.abspath(__file__))
+    lic_file = os.path.join(curr_dir, 'Custom.mxtpro')
+    with zipfile.ZipFile(lic_file, 'w') as zip_file:
+        zip_file.writestr('Pro.key', data=encoded_lic_key)
+    return lic_file
 
 
 def print_help():
@@ -130,7 +133,7 @@ def print_help():
 
 if __name__ == '__main__':
     """
-    $ python3 MobaXterm-Keygen.py me 23.0
+    $ python3 MobaXterm-Keygen.py me 23.4
     """
     if len(sys.argv) != 3:
         print_help()
@@ -139,13 +142,13 @@ if __name__ == '__main__':
         MajorVersion, MinorVersion = sys.argv[2].split('.')[0:2]
         MajorVersion = int(MajorVersion)
         MinorVersion = int(MinorVersion)
-        generate_license(LicenseType.Professional,
-                         sys.argv[1],    # user name
-                         MajorVersion,
-                         MinorVersion,
-                         1)
+        lic_file = generate_license(LicenseType.Professional,
+                                    sys.argv[1],    # user name
+                                    MajorVersion,
+                                    MinorVersion,
+                                    1)
         print('[*] OK!')
-        print('[*] File generated: %s' % os.path.join(os.getcwd(), 'Custom.mxtpro'))
+        print('[*] File generated: %s' % lic_file)
         print("[*] Please move or copy the newly-generated file to MobaXterm's installation path.")
         print()
 else:

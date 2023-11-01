@@ -13,19 +13,19 @@ Usage:
     python3 MobaXterm-Keygen.py <UserName> <Version>
 
     <UserName>:      The Name licensed to <me>
-    <Version>:       The Version of MobaXterm <23.0>
+    <Version>:       The Version of MobaXterm <23.4>
 ```
 
 Example:
 
 ```bash
-PS path\to\MobaXterm-Keygen>python3 MobaXterm-Keygen.py me 23.0
+PS path\to\MobaXterm-Keygen>python3 MobaXterm-Keygen.py me 23.4
 [*] Success!
 [*] File generated: path\to\MobaXterm-Keygen\Custom.mxtpro
 [*] Please move or copy the newly-generated file to MobaXterm's installation path.
 ```
 
-Then copy `Custom.mxtpro` to `%ProgramFiles%\MobaXterm\v23.0\`.
+Then copy `Custom.mxtpro` to `%ProgramFiles%\MobaXterm\v23.4\`.
 
 ## About
 
