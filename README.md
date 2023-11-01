@@ -19,9 +19,9 @@ Usage:
 Example:
 
 ```bash
-PS path\to\MobaXterm-Keygen>python3 MobaXterm-Keygen.py me 23.4
+PS path\to\MobaXterm-keygen>python3 MobaXterm-Keygen.py me 23.4
 [*] Success!
-[*] File generated: path\to\MobaXterm-Keygen\Custom.mxtpro
+[*] File generated: /path/to/MobaXterm-keygen/Custom.mxtpro
 [*] Please move or copy the newly-generated file to MobaXterm's installation path.
 ```
 
